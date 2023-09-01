@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Cases | Criminal Historys</title>
+</head>
+<body>
+    <header>
+        <img src="../../../assets/logo-criminal.svg" alt="">
+        <nav>
+            <a href="../index.html" class="link">Home</a>
+            <a href="../about/index.html" class="link">Sobre</a>
+            <div href="#" class="link dropdown-container">
+                <span>Indicações</span>
+                <div class="dropdowns">
+                    <a href="../Series/index.html" class="dropdown">Séries</a>
+                </div>
+            </div>
+            <a href="#" aria-current="page" class="link">Casos</a>
+        </nav>
+    </header> 
+
+    <main class="folders">
+        <div class="folder-container">
+            <div class="folder">
+                <img src="../../../assets/assassin-1.png" alt="">
+                <h2>JEFFREY DAHMER</h2>
+                <button onclick="handleOpenFolder()">Abrir pasta</button>
+            </div>
+            <div class="folder"></div>
+            <div class="folder"></div>
+            <div class="folder"></div>
+            <div class="folder"></div>
+            <div class="folder"></div>
+        </div>
+    </main>
+
+    <section class="folder-1">
+        <button onclick="handleCloseFolder()" class="close">
+            <i class="ph ph-x"></i>
+        </button>
+        <div class="caracter">            
+            <img src="../../../assets/image 8.png" alt="">
+            <div class="credentials">
+                <span>Nome: Jeffrey Lionel Dahmer</span>
+                <span>Altura: 1.85m</span>
+                <span>Nacionalidade: Wisconsin, Estados Unidos</span>
+                <span>Nascimento: 21 de maio de 1960</span>
+                <span>Falescimento: 28 de novembro de 1994</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="active" onclick="toggleMenuBlock(this, 0)">Histórico</button>
+            <button onclick="toggleMenuBlock(this, 1)">Ritual</button>
+            <button onclick="toggleMenuBlock(this, 2)">Vítimas</button>
+        </div>
+        <div class="resums-container">
+            <div class="resums-content">
+                <h2>Histórico</h2>
+                <p>
+                    Jeffrey Lionel Dahmer é um famoso canibal norte-americano nascido em 1960, em
+                    Milwaukee, Wisconsin. Aos quatro anos, ele foi submetido a uma cirurgia, o que marcou
+                    muito o seu subconsciente e o fez repetir o ato em suas vítimas, abrindo o tórax delas e
+                    operando suas vísceras.
+                    Dos dez aos quinze anos, após uma série de mudanças em sua vida, Dahmer descobriu ter
+                    fascínio por animais mortos, começou a recolher os que achava atropelados em estradas e
+                    realizar cruéis experimentos neles, como decapitar e branquear ossos utilizando ácido.
+                    Anos depois, entrou em uma universidade, por insistência de seu pai, porém repetiu de ano.
+                    Então teve duas opções: arrumar um emprego ou alistar-se ao Exército. Dahmer escolheu a
+                    segunda. Após dois anos, foi dispensado por alcoolismo e preso pela primeira vez por
+                    desordem e embriaguez.
+                    Ele também realizou uma série de assassinatos e foi levado a júri em julho de 1992, quando confessou os
+                    crimes. Ele foi considerado são e sentenciado a 15 prisões perpétuas consecutivas, um total
+                    de 957 anos de reclusão. Por fim, foi assassinado em 1994 por Christopher Scarver, preso
+                    por assassinato em primeiro grau e que pensava ser filho de Deus.
+                    
+                </p>
+            </div>
+
+            <div class="resums-content">
+                <h2>Ritual:</h2>
+                    <p>
+                        Tudo começava em um bar ou uma sauna gay, onde Dahmer caçava suas vítimas. Em
+                        seguida, ele as atraía para seu apartamento, oferecendo dinheiro para que posassem para
+                        fotos ou simplesmente tomassem uma cerveja e assistissem a um vídeo com ele. Em
+                        seguida, elas eram drogadas, outras chegaram a ser lobotomizadas para servirem
+                        sexualmente, apesar da experiência nunca ter dado certo.
+                        O processo de morte era realizado por estrangulamento. Ele, então, passava a masturbar-se sobre os corpos, copulava com eles
+                        e os guardava por dias, para conseguir fazer sexo oral ou anal quando sentisse vontade.
+                        O ato de estripar o cadáver era completamente fotografado, para que pudesse lembrar dos
+                        detalhes com precisão. Dahmer abria o tórax da vítima, iniciava o esquartejamento,
+                        separava as partes entre úteis e inúteis, fritava os músculos e comia o coração. Chegou também a tentar beber sangue, mas não
+                        gostou do sabor.
+                        As partes consideradas inúteis eram reduzidas a lama fétida com o auxílio de produtos
+                        químicos e ácidos, sendo jogadas em ralos ou na privada. Os crânios eram guardados e as
+                        genitais, preparadas em conserva, para servirem de troféus.      
+                    </p>
+                </div>
+
+                <div class="resums-content">
+                    <h2>Vítimas: </h2>
+                    <p>
+                        No total, o canibal afirmou ter matado 17 pessoas, apesar de só ter sido processado por 12.
+                        As vítimas pelas quais foi processado foram identificadas a partir de partes de seus corpos
+                        encontrados no apartamento de Dahmer.
+                        Sua última vítima foi Tracy Edwards, de 32 anos. Ele não chegou a ser morto e foi
+                        encontrado, pela polícia, algemado correndo pela rua. Ele contou que estava em um
+                        encontro homossexual quando o parceiro o algemou e tentou matá-lo. Os policiais não
+                        acreditaram, mas o acompanharam até a casa de Dahmer. Eles foram recebidos pelo
+                        assassino que confirmou o encontro e disse que ia pegar as chaves da algema no quarto.
+                        Um dos policiais decidiu seguir Jeffrey, mas foi pego de surpresa com a decoração do
+                        imóvel repleta de fotos de cadáveres, vísceras, sangue, cabeças decepadas etc. Antes que
+                        pudesse ser preso, o canibal tentou atacá-lo, mas não obteve sucesso. Sendo
+                        posteriormente preso e condenado.
+
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
